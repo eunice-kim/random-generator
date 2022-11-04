@@ -1,0 +1,142 @@
+@import url("https://use.typekit.net/sbn4aio.css");
+
+* {
+  box-sizing:border-box;
+  font-family:sans-serif;
+  text-transform:uppercase;
+}
+
+body {
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(rgb(0,0,0), rgb(255,255,255));
+  font-size:1.5vmin;
+}
+
+  #welcome {
+    color:white;
+    font-size:10vmin;
+    font-family: masqualero-groove, sans-serif;
+    opacity:.9;
+    margin-bottom:2vmin;
+    display:none;
+  }
+
+  #intro-message {
+    color:white;
+    font-size:2vmin;
+    margin-bottom:4vmin;
+    display:none;
+    word-spacing:0.25vmin;
+  }
+
+  #output-text {
+    color:white;
+    font-size:2vmin;
+    word-spacing:0.25vmin;
+    display:none;
+    text-align:center;
+    margin-bottom:-4vmin;
+  }
+
+  #output-percentage {
+    display:none;
+    color:white;
+    text-shadow: 0 0 5vmin #0ff;
+    animation: rotate 4s ease infinite;
+  }
+
+    #number {
+      font-size:30vmin;
+      font-family: masqualero-groove, sans-serif;
+    }
+
+    #percent {
+      margin-left:1vmin;
+      font-size:6vmin;
+      vertical-align: top; position: relative; top: 10vmin;
+    }
+
+  #again-message {
+    color:white;
+    font-size:1.5vmin;
+    word-spacing:0.25vmin;
+    margin-bottom: 2vmin;
+    display:none;
+  }
+
+  #user-input {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items:center;
+  }
+
+    #textbox-container {
+      display:none;
+    }
+
+      .textbox {
+        all:unset;
+        width:14vmin;
+        height:2vmin;
+        background-color:white;
+        padding:1vmin;
+      }
+
+      #text-input {
+        width:35vmin;
+        margin-left:-1vmin;
+      }
+
+    #runButton {
+      all:unset;
+      width:10vmin;
+      height:5vmin;
+      border-radius:50%;
+      margin-left:5vmin;
+      background-color:white;
+      text-align:center;
+      opacity:.5;
+      transition:all .25s;
+    }
+
+      #runButton:hover {
+        opacity:1;
+      }
+
+  #error-message {
+    color:red;
+    margin-top:2vmin;
+    display:none;
+    font-size:1.25vmin;
+  }
+
+.show {
+  display:block !important;
+}
+
+@keyframes blink {
+  0% { opacity:0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes rotate {
+  from { transform:rotate(0); }
+  to { transform:rotate(360deg); }
+}
+
+@keyframes shift {
+  0% { transform:translateX(0); }
+  25% { transform:translateX(-1vmin); }
+  50% { transform:translateX(1vmin); }
+  75% { transform:translateX(-1vmin); }
+  100% { transform:translateX(0); }
+}
+}
